@@ -1,0 +1,13 @@
+#headerLogo{
+    height: 70px;
+    width: auto;
+    padding: 5px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
