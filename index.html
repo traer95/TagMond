@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,13 +22,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item ">
-                <a class="nav-link" href="#">Wer sind Wir? <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#WerSindWir">Wer sind Wir? <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Preise</a>
+                <a class="nav-link" href="#kunde">Kategorie & Eignung</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="#eundi">Ausstattung & Inventar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#preise">Preise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#kontakt">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -42,68 +48,225 @@
 
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <h2 class="hero_header">HERO <span class="light">LIGHT</span></h2>
-        <p class="tagline">Light is a simple one page website</p>
-    </section>
+
+        <img alt="Kirchenstrasse 89a" id="heroImg" src="K89a_1.jpg">
+    <span id="WerSindWir"></span>
+<!--        <h2 class="hero_header">HERO <span class="light">LIGHT</span></h2>-->
+<!--        <p class="tagline">Light is a simple one page website</p>-->
+
     <!-- About Section -->
     <section class="about" id="about">
         <h2 class="hidden">About</h2>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p class="about">In München-Haidhausen, in der Kirchenstraße 89a wurde ein außergewöhnlicher Veransaltungsraum geschaffen,
+            der <span id="tag">Tag</span><span id="mond">Mond</span>. Das Flair einer ehemaligen Werkstatt mit hoher Tonnengewölbe-Decke ist feinfühlig erhalten,
+            allerdings stimmig mit der Moderne verbunden. Der offenen Raum bietet eine großzügige, inspirierende
+
+            Atmosphäre. Geschmackvoll eingerichtet und barrierefrei bieten die 280 Quadratmeter vielfältige Nutzungsmöglichkeiten.<br><br>
+
+            <span id="tag">Tag</span><span id="mond">Mond</span> verfügt über moderne Präsentations- Licht- und TonTechnik und beinhaltet eine komplett ausgestattete
+            Bistro-Bar (mit Schankkonzession). Ideal für Privat- und Firmenveranstaltungen aller Art. Ein ganz besonderer
+            Spielort auch für Vernissagen, Lesungen, Theater, Tanz, Musik- oder sonstige Kulturveranstaltungen – Bühne und
+            Klavier sind vorhanden.
+        </p>
+
+        <!-- Stats Gallery Section -->
+        <div class="gallery">
+            <div class="thumbnail">
+                <h1 class="stats">280m²</h1>
+                <h4>Fläche</h4>
+                <p>Vielseitig & barrierefrei </p>
+            </div>
+            <div class="thumbnail">
+                <h1 class="stats">Haidhausen</h1>
+                <h4>ruhige Lage</h4>
+                <p>800m vom Ostbahnhof entfernt</p>
+            </div>
+            <div class="thumbnail">
+                <h1 class="stats">300€ Netto</h1>
+                <h4>Mindestmietdauer</h4>
+                <p>für 2 Stunden</p>
+            </div>
+            <div class="thumbnail">
+                <h1 class="stats">Ideal</h1>
+                <h4>für</h4>
+                <p>Veranstaltungen aller Art</p>
+            </div>
+        </div>
+        <p class="about"><b>Kapazität</b></p><br>
+        <p class="about2">
+Aufgrund der aktuellen Situation für bis zu 28 Personen unter Beachtung der Covid 19-Hygienevorschriften.
+</p><br>
+        <p class="about"><b>Lage</b></p><br>
+        <p class="about2"><span id="kunde"></span>
+Beste Erreichbarkeit: nur 800 Meter vom Ostbahnhof (mit Bus ca. 6 Minuten, zu Fuß ca. 10 Minuten)
+Die Kirchenstraße und umliegenden Straßen sind parkgebührpflichtig.
+</p>
+        <br>
+        <section >
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.607055664062502%2C48.132450844372336%2C11.610939502716066%2C48.134115643404044&amp;layer=mapnik&amp;marker=48.13328255116978%2C11.608998120027536" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.13328&amp;mlon=11.60900#map=19/48.13328/11.60900">Größere Karte anzeigen</a></small>
+        </section>
+
+        <!--        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>-->
+        <!--        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>-->
     </section>
-    <!-- Stats Gallery Section -->
-    <div class="gallery">
-        <div class="thumbnail">
-            <h1 class="stats">1500</h1>
-            <h4>TITLE</h4>
-            <p>One line description</p>
-        </div>
-        <div class="thumbnail">
-            <h1 class="stats">2300</h1>
-            <h4>TITLE</h4>
-            <p>One line description</p>
-        </div>
-        <div class="thumbnail">
-            <h1 class="stats">7500</h1>
-            <h4>TITLE</h4>
-            <p>One line description</p>
-        </div>
-        <div class="thumbnail">
-            <h1 class="stats">9870</h1>
-            <h4>TITLE</h4>
-            <p>One line description</p>
-        </div>
-    </div>
     <!-- Parallax Section -->
-    <section class="banner">
-        <h2 class="parallax">PARALLAX HERO</h2>
-        <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    <section class="bannerLeft">
+        <h2 class="parallaxLeft">Kategorie</h2>
+        <p class="parallax_descriptionLeft">
+            • Ausstellungsraum<br>
+            • Foto-/Drehlocation<br>
+            • Loft<br>
+            • Studio<br>
+            • Tagungs-/ Seminarraum<br>
+            • Veranstaltungsraum
+        </p>
+    </section>
+    <section class="bannerRight">
+        <h2 class="parallaxRight">Eignung</h2>
+        <p class="parallax_description">
+            • Ausstellungen/Vernissagen<br>
+            • Film-/Fotoproduktionen<br>
+            • Präsentationen<br>
+            • Seminar/Schulung/Workshops/Tagungen/Konferenzen<br>
+            • Theater/Tanz/Konzerte<br><span id="eundi"></span>
+            • Privat-/Firmenveranstaltungen
+        </p>
+    </section>
+    <section class="bannerLeft">
+        <h2 class="parallaxLeft">Ausstattung</h2>
+        <p class="parallax_descriptionLeft">
+            • Beamer mit Leinwand<br>
+            • Bühne <br>
+            • Flipchart/Whiteboard <br>
+            • große Soundanlage <br>
+            • WLAN <br>
+            • WC-Anlage (+ Behinderten-WC)
+        </p>
+    </section>
+    <section class="bannerRight">
+        <h2 class="parallaxRight">Inventar</h2>
+            <p class="parallax_description">
+                • Farblichtanlage, Lichtanlage, große Fenster, Tageslicht<br>
+                • Klavier<br>
+                • komplett ausgestattete Teeküche/Bistro-Bar<br>
+                • Stühle, Sitzecke & Designer-Sesseln (flexibel einsetzbar)<br>
+                • Vollholztische (flexibel einsetzbar)<br>
+                • Vorder- und Hintereingang
+            </p>
+    </section>
+    <section class="footer_banner">
+        <h2 style="color: #FFFFFF" class="">Besonderheiten</h2>
+        <p class="kontakt">
+            • Ausschließlich für Anlieferungen gibt es eine direkte Zufahrt/Belieferungsmöglichkeit, ebenerdig im Innenhof<br>
+            • Im Innenbereich gilt Rauchverbot. Rauchbereich vor der Eingangstüre möglich, Aschenbecher vorhanden<br>
+            • Catering organisieren wir gern für jede Geschmacksrichtung mit professionellem, sympathischem Serviceteam<br>
+            • Hotels, Restaurants und Lebensmittelgeschäfte befinden sich in unmittelbarer Umgebung
+        </p>
+
+    </section>
+    <section>
+        <div id="slideshow"><span id="preise"></span>
+            <div>
+                <img class="slideShowIMG" src="SK_Vortrag1.jpg">
+            </div>
+            <div>
+                <img class="slideShowIMG" src="K89a_2.jpeg">
+            </div>
+            <div>
+                <img class="slideShowIMG" src="TagMond_Barbereich.jpg">
+            </div>
+        </div>
+
+    </section>
+    <section class="footer_banner">
+        <h2 style="color: #FFFFFF"  class="">Konditionen</h2>
+        <p class="kontakt">
+            ab<br>
+            300,– Euro Netto für zweistündige Veranstaltungen (Mindestbuchungsdauer)<br>
+            400,– Euro Netto pro 1/2 Tag (4 Stunden)<br>
+            800,– Euro Netto pro Tag (10 Stunden)<br>
+            1.500,– Euro Netto pro 2 Tage (20 Stunden)<br>
+            Für Buchungen ab 3 Tagen oder wiederkehrende Buchungen erhalten Sie gern ein individuelles Angebot.
+        </p>
     </section>
     <!-- More Info Section -->
-    <footer>
+  <!--  <footer>
         <article class="footer_column">
             <h3>ABOUT</h3>
-            <img src="file:///C|/Users/Joan/AppData/Roaming/Adobe/Dreamweaver CC 2018/de_DE/Configuration/Temp/Assets/eamC6C2.tmp/images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+            <img src="TagMondRing.svg" alt="" width="120" height="120" class="cards"/>
+            <p>• Ausstellungsraum<br>
+                • Foto-/Drehlocation<br>
+                • Loft<br>
+                • Studio<br>
+                • Tagungs-/ Seminarraum<br>
+                • Veranstaltungsraum </p>
         </article>
         <article class="footer_column">
             <h3>LOCATION</h3>
-            <img src="file:///C|/Users/Joan/AppData/Roaming/Adobe/Dreamweaver CC 2018/de_DE/Configuration/Temp/Assets/eamC6C2.tmp/images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+            <img src="TagMondRing.svg" alt="" width="120" height="120" class="cards"/>
+            <p>• Ausstellungen/ Vernissagen<br>
+                • Film-/ Fotoproduktionen<br>
+                • Präsentationen<br>
+                • Seminar / Schulung / Workshops / Tagungen / Konferenzen<br>
+                • Theater / Tanz / Konzerte<br>
+                • Privat-/ Firmenveranstaltungen </p>
         </article>
-    </footer>
+    </footer>-->
     <!-- Footer Section -->
+    <section>
+        <br>
+        <div class="quote">
+            <p style="font-size: xx-large; float: left">"</p><br>
+            <span id="tag">Tag</span><span id="mond">Mond</span> bezeichnet das Phänomen, wenn der Mond tagsüber sichtbar ist. Das, sowie der beeindruckende,
+            neuseeländische Roman „Unter dem Tagmond“, hat uns dazu bewogen diesen Namen zu wählen.
+            Wir bieten einen besonderen Raum, indem sich unsere Gäste entspannt treffen, sich neue Ideen entwickeln und –
+            auch unkonventionelle – Lösungen sichtbar werden können.
+            Ein Raum für Möglichkeiten.
+            <p style="float: right; font-size: xx-large">"</p>
+        </div>
+
+    </section>
+    <br>
+    <div class="cta">
+        <span id="kontakt"></span>
+        <br>
+
+        <h4>Kontaktieren Sie uns und buchen Sie Ihre persönliche, strahlende Veranstaltung im TagMond!</h4><br>
+    </div>
     <section class="footer_banner" id="contact">
+        <img class="circleIMG" src="TagMondRing.svg" alt="" /><br><br>
         <h2 class="hidden">Footer Banner Section </h2>
-        <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-        <div class="button">subscribe</div>
+        <p class="hero_header">Kontakt</p><br>
+        <p class="kontakt">
+        <span id="tag">Tag</span><span id="mond">Mond</span><br>
+        Raum für Möglichkeiten<br>
+        Kirchenstraße 89a<br>
+        81675 München-Haidhausen<br><br>
+        Ihre Ansprechpartnerin für Anfragen & Buchungen<br>
+        Samantha Steuer<br>
+        Telefon: 089. 23 74 48 48<br>
+        E-Mail: <a href="mailto:mail@tagmond.de">mail@tagmond.de</a>
+        </p>
+        <br>
+        <br>
     </section>
     <!-- Copyrights Section -->
-    <div class="copyright">&copy;2015 - <strong>Light Theme</strong></div>
+    <div class="copyright">&copy;2021 - <strong>TagMond GmbH</strong> - <a href="mailto:mail@tagmond.de">Kontakt</a> - <a href="impressum.html">Impressum</a></div>
 </div>
 <!-- Main Container Ends -->
 
 </body>
 </html>
+
+<script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(0)
+            .next()
+            .fadeIn(0)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
+</script>

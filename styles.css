@@ -1,3 +1,6 @@
+nav{
+    z-index: 9999;
+}
 #headerLogo{
     height: 70px;
     width: auto;
@@ -10,4 +13,154 @@
     padding-left: 15%;
     padding-right: 15%;
 
+}
+.about{
+    font-size: large;
+}
+
+#heroImg{
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+
+}
+
+.copyright a, a:hover{
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+.cards {
+    width: 50%;
+    height: 50%;
+    max-height: 70px;
+    margin: 20px;
+}
+.about2{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+.parallaxLeft {
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    margin-top: 0px;
+}
+
+.bannerLeft {
+    background-color: #7895b6;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.parallax_descriptionLeft {
+    color: #FFFFFF;
+    text-align: left;
+    padding-right: 100px;
+
+    float: right;
+    font-weight: lighter;
+    line-height: 23px;
+    font-size: larger;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.parallax_description {
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 100px;
+    width: 60%;
+    float: left;
+    font-weight: lighter;
+    line-height: 23px;
+    font-size: larger;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.parallaxRight {
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    margin-top: 0px;
+}
+.bannerRight {
+    background-color: #16427e;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slideshow {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    margin: auto;
+    background-color: #B3B3B3;
+
+}
+
+#slideshow > div {
+    overflow: hidden;
+    height: inherit;
+
+}
+.slideShowIMG{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: auto;
+}
+
+.kontakt{
+    color: #FFFFFF;
+    text-align: left;
+    display: inline-block;
+}
+.kontakt a{
+    text-decoration: none !important;
+    color: #FFFFFF;
+}
+.circleIMG{
+    text-align: center;
+    max-width: 120px;
+    max-height: 120px;
+}
+.quote{
+    padding: 25px;
+
+    display: inline-block;
+    /* background-color: #FFFFFF; */
+    margin-right: 40px;
+
+    font-style: italic;
+    text-align: center;
+    margin-left: 40px;
+    background-color: #f2f2f2;
+
+}
+.cta{
+    font-weight: bold;
+    text-align: center;
+
+}
+#tag{
+    color: #7895b6;
+    font-weight: bold;
+}
+#mond{
+    color: #16427e;
+    font-weight: bold;
 }
